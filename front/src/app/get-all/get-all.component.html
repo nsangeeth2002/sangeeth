@@ -1,0 +1,36 @@
+
+
+
+<h1>GetAll </h1>
+
+<button (click)="postData()">Add User</button>
+
+<br><br>
+<table border="2px">
+    <thead>
+        <tr><th>so.no</th>
+            <th>Name</th>
+            <th>color</th>
+            <th>price</th>
+            
+            <th>option</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of bik;let i=index">
+            <td>{{i+1}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.color}}</td>
+            <td>{{s.price}}</td>
+            
+<td>
+<button (click)="goToGet(s.id)"  class="btn btn-success">View</button>
+<button (click)="goToUpdate(s.id)" class="btn btn-warning">Update</button>
+
+<button (click)="DeleteById(s.id)" class="btn btn-danger">Delete</button> 
+</td> 
+        </tr>
+    </tbody>
+   
+</table>
+

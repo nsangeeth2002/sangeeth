@@ -1,0 +1,35 @@
+<p>update works!</p>
+ 
+<h2>Add New Bike</h2><br>
+
+<form [formGroup]="bike" >
+    <div>
+        Name: <input type="text" name="name" formControlName="name"  >
+        
+    </div><br>
+    
+    <div>
+        color:<input type="text" name="color" formControlName="color">
+        
+    </div><br>
+    <div>
+        price:<input type="number" name="price" formControlName="price" >
+        
+    </div><br>
+   
+     
+     
+    <button type="submit" (click)="updates()" >submit</button>
+</form> 
+
+
+
+
+<button (click)="back()">back</button>
+ 
+
+
+
+
+
+ 
